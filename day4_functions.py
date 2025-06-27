@@ -5,7 +5,7 @@ def calculation_saving (income, expenses):
 saving = calculation_saving(income, expenses)
 print(f"Monthly saving: {saving}")
 def saving_percentage (saving, income):
-    return saving / income * 100
+    return round(saving / income * 100,1)
 saving_percentage = saving_percentage (saving, income)
 if saving_percentage > 35:
     print("Well done! Great savings")
